@@ -1,0 +1,99 @@
+body {
+  background-color: #1a1a1a;
+  color: #aaa;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+.loader-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .loader-wrapper p {
+    margin-top: 50px; }
+
+.loader {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 5px solid red;
+  border-radius: 50%;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: spin 1s cubic-bezier(0.19, 1, 0.22, 1) infinite; }
+
+@keyframes spin {
+  from {
+    transform: rotate(0); }
+  to {
+    transform: rotate(360deg); } }
+
+@keyframes zoom-out {
+  from {
+    transform: scale(0);
+    opacity: 1; }
+  to {
+    transform: scale(0.8);
+    opacity: 0; } }
+
+.control-bar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.9; }
+
+.control-bar {
+  min-height: 100vh;
+  width: 300px;
+  background-color: #111; }
+  .control-bar.hide {
+    display: none; }
+  .control-bar .ttl {
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    padding: 7px 0;
+    color: #666; }
+  .control-bar span {
+    width: 100%;
+    text-align: center;
+    padding: 9px 0; }
+    .control-bar span:hover {
+      background-color: #222;
+      cursor: pointer; }
+    .control-bar span.selected {
+      background-color: #000;
+      color: red; }
+
+.mam-options {
+  display: flex; }
+
+.phenomenons {
+  display: flex;
+  flex-direction: column; }
+
+.menu-toggle-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%);
+  padding: 9px;
+  background-color: #000; }
+  .menu-toggle-btn:hover {
+    background-color: #111;
+    cursor: pointer; }
+
+.info-panel {
+  padding: 9px;
+  background-color: #000;
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+
+
+/*# sourceMappingURL=/src.e31bb0bc.css.map */
